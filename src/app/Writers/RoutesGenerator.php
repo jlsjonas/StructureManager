@@ -34,6 +34,7 @@ class RoutesGenerator
                 ? "->prefix('".$prefix."')->as('".$prefix.".')"
                 : '',
             '${Model}'  => $model,
+            '${model}'  => lcfirst($model),
             '${Models}' => str_plural($model),
             '${models}' => str_plural(lcfirst($model)),
         ];
